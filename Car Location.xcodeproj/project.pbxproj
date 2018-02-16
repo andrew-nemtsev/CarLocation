@@ -18,10 +18,10 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		840D62732036D329001D798C /* Car Location.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Car Location.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		8417A99A203468AA00014EFC /* Vehicle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Vehicle.swift; sourceTree = "<group>"; };
 		8417A99C2035ADEB00014EFC /* AreaGridView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AreaGridView.swift; sourceTree = "<group>"; };
 		8429A25F2035E55700C5EC40 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
-		8430F74720356F8100FD7772 /* Car Location.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; name = "Car Location.app"; path = "/Users/admin/Documents/projects/Car Location/build/Debug-iphoneos/Car Location.app"; sourceTree = "<absolute>"; };
 		8430F74A20356F8100FD7772 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		8430F74C20356F8100FD7772 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		8430F74F20356F8100FD7772 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -69,6 +69,7 @@
 			isa = PBXGroup;
 			children = (
 				8430F74920356F8100FD7772 /* Car Location */,
+				840D62732036D329001D798C /* Car Location.app */,
 			);
 			sourceTree = "<group>";
 		};
@@ -105,7 +106,7 @@
 			);
 			name = "Car Location";
 			productName = "Car Location";
-			productReference = 8430F74720356F8100FD7772 /* Car Location.app */;
+			productReference = 840D62732036D329001D798C /* Car Location.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -302,7 +303,9 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = X45HL93K7U;
 				INFOPLIST_FILE = "Car Location/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.usetech.car-location";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -316,7 +319,9 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = X45HL93K7U;
 				INFOPLIST_FILE = "Car Location/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.usetech.car-location";
 				PRODUCT_NAME = "$(TARGET_NAME)";
