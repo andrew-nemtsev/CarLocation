@@ -38,6 +38,30 @@ class GridView: UIView
     {
         path = UIBezierPath()
         path.lineWidth = 1.0
+        //let context = UIGraphicsGetCurrentContext()
+        let bgPath = UIBezierPath(rect: rect)
+        UIColor(red: 0.0, green: 0.5, blue: 0.0, alpha: 1.0).setFill()
+        bgPath.fill()
+        
+        let area = CGRect(x: (CGFloat)(-GridView.AREA_SIZE * GridView.CELL_SIZE) + origin.x,
+                         y: (CGFloat)(-GridView.AREA_SIZE * GridView.CELL_SIZE) + origin.y,
+                         width: (CGFloat)(GridView.AREA_SIZE * GridView.CELL_SIZE * 2),
+                         height: (CGFloat)(GridView.AREA_SIZE * GridView.CELL_SIZE * 2))
+        let dashes : [ CGFloat ] = [20.0, 20]
+        let areaPath = UIBezierPath(rect: area)
+        
+        areaPath.lineWidth = 20
+        UIColor.orange.setStroke()
+        
+        areaPath.setLineDash(dashes, count: dashes.count, phase: 0.0)
+        areaPath.stroke()
+        
+        UIColor.black.setStroke()
+        areaPath.setLineDash(dashes, count: dashes.count, phase: 20.0)
+        areaPath.stroke()
+        
+        UIColor.white.setFill()
+        areaPath.fill()
         
         let radius = CGFloat(GridView.CELL_SIZE * GridView.AREA_SIZE)
         let minX = -radius + origin.x
